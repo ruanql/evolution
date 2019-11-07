@@ -7,12 +7,49 @@
     <title>Evolution Blindagens</title>
     <link rel="stylesheet" href="/assets/style/style.css">
     <link rel="stylesheet" href="/Content/Plugins/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html">
+              <img src="/assets/img/Logotipo-12.svg" alt="Logo Evolution">
+            </a>
+          </div>
+          <nav class="responsive">
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="sobre-nos.html">Sobre nós</a>
+              </li>
+              <li>
+                <a href="tratamentos.html">Blindagens</a>
+              </li>
+              <li>
+                <a href="equipe.html">Serviços</a>
+              </li>
+              <li>
+                  <a href="equipe.html">Veículos</a>
+              </li>
+              <li>
+                  <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
     <header class="main-header">
         <nav class="container menu">
           <a href="index.html">
-            <img src="/assets/img/Logotipo-12.svg" alt="">
+            <img src="/assets/img/Logotipo-12.svg" alt="Logo Evolution">
           </a>
           <ul>
             <li><a href="sobre-nos.html">Sobre nós</a></li>
@@ -27,9 +64,8 @@
         <div class="aling-center">
           <div class="header-text margin-top-zero">
             <h3>Segurança de alto nível para você e sua família<br>
-              Você por inteiro
             </h3>
-            <p>Blindagem automotiva com as melhores tecnologias do mercado</p>
+            <p>Blindagem automotiva com as melhores tecnologias do mercado.</p>
           </div>
         </div>
     
@@ -69,7 +105,7 @@
                         </p>
             </div>
         </section>
-
+        
         <section class="sistemas">
           <div class="container">
               <h2 class="home-title">Blindagem nível III-A: máxima proteção para o seu veículo</h2>
@@ -80,13 +116,13 @@
                   <div class="box" style="background-image: url('/assets/img/sistema-udura.png');">
                     <h5 class="title">Sistema Udura</h5>
                     <p class="text">Descubra a tecnologia que revolucionou o mercado de blindagens.</p>
-                    <a href="sistemas.html" class="link">Saiba mais<i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href="sistemas.html" class="sistemas__button">Saiba mais</a>
                     <div class="overlay-box"></div>
                   </div>
                   <div class="box" style="background-image: url('/assets/img/sistema-aco-manta.png');">
                     <h5 class="title">Sistemas aço e manta</h5>
                     <p class="text">Técnicas refinadas para oferecer uma solução extremamente segura.</p>
-                    <a href="sistemas.html" class="link">Saiba mais<i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href="sistemas.html" class="sistemas__button">Saiba mais</a>
                     <div class="overlay-box"></div>
                   </div>
                 </div>
@@ -100,25 +136,129 @@
               <img src="/assets/img/blindadora-certificada.png" alt="Foto de blindadora certificada">
             </div>
             <div class="col-md-6 col-12">
-              <h2 class="home-title text-left pt-5">Certificados pela Toyota</h2>
-              <p class="home-text text-left">Com extenso know-how no ramo de blindagem automotiva, a Evolution Blindagens 
+              <h2 class="home-title pt-5">Certificados pela Toyota</h2>
+              <p class="home-text">Com extenso know-how no ramo de blindagem automotiva, a Evolution Blindagens 
                 é certificada pela Toyota do Brasil e possui também a certificação ISO 9001:2015.
               </p>
-              <button>
-
-              </button>
+              <p class="home-text pt-5">
+              <a href="sistemas.html" class="saiba-mais__button">Saiba mais</a>
+              </p>
             </div>
           </div>
           </div>
         </section>
 
-    </main>
-    <footer>
+        <section class="numeros">
+            <div class="container">
+                <h2 class="home-title">Evolution em números</h2>
+                <p class="home-text">Confira alguns dados que comprovam nossa
+                   expertise e excelência em blindagens automotiva.<br><br></p>
+                   <div class="container-fluid text-center">
+                      <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+                        <div class="rect">
+                          <h1>2345</h1>
+                          <p>Veículos<br> blindados</p>
+                        </div>
+                        <div class="rect">
+                          <h1>1287</h1>
+                          <p>Clientes<br> satisfeitos</p>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </section>
 
+        <section class="marcas">
+            <div class="container">
+                <h2 class="home-title">Marcas mais blindadas</h2>
+                <p class="home-text">A Evolution Blindagens é referência no mercado
+                   e atua na proteção de veículos das melhores montadoras.<br><br></p>
+            </div>
+        </section>
+
+    </main>
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter__row">
+          <div class="col-sm-6">
+            <div class="block-inscrevase">
+              <form class="block-inscrevase" name="news" id="contactform" method="POST" action="https://formsubmit.io/send/">
+                <input class="block-inscrevase__input" name="email" placeholder="Inscreva-se para receber nossa newsletter">
+                <input name="_redirect" type="hidden" id="name" value="/contato-obrigado.html">
+                <input type='hidden' name='form-name' value='newsletter'/>
+                <button class="btn-arrow" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6 aling-itens">
+            <div class="block-inscrevase aling-itens">
+              <p class="block-inscrevase__text pt-2">Siga-nos nas Redes Sociais</p>
+              <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f icon"></i></a>
+              <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i></a>
+              <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-linkedin-in icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="bg-footer">
+      <div class="container">
+        <div class="row__footer">
+          <div class="col__footer">
+            <a href="index.html">
+              <div class="logo-block">
+                <img src="/assets/img/Logotipo-12.svg" alt="Logo Evolution">
+              </div>
+            </a>
+          </div>
+          <div class="col__footer">
+            <div class="row">
+              <ul class="col-md-4 col-sm-12">
+  <li class="title"><a href="sobre-nos.html">Sobre nós</a></li>
+                <li>A evolution blindagens inicio suas atividades em 2014,
+                   no ABC Paulista. Temos como filosofia o alto padrão de
+                   qualidade e a satisfação total dos clientes.
+                   Atuando no mercado de blindagens com a mais alta tecnologia,
+                   estamos sempre inovando com técnicas e materiais modernos.
+                </li>
+              </ul>
+              <ul class="col-md-2 col-sm-12">
+                  <li class="title"><a href="equipe.html">Blindados</a></li>
+                <li class="title"><a href="equipe.html">Serviços</a></li>
+                <li class="title"><a href="planos.html">Veículos</a></li>
+              </ul>
+              <ul class="col-md-4 col-sm-12">
+                <li class="title"><a href="contato.html">Contato</a></li>
+                <li class="subtitle"><strong>Fábrica</strong></li>
+                <li>Av. Papa João XXIII, 1103, - Vila Noêmia, Mauá - SP</li>
+                <li>Tel: +55 (11) 4515-3719 - Comercial</li>
+                <li>Tel: +55 (11) 4515-3718 - Financeiro</li>
+                <li class="subtitle"><strong>Showroom</strong></li>
+                <li>Av. Vereador José Diniz, 3707 - São Paulo - SP</li>
+                <li>Tel: +55 (11) 3225-0669</li>
+                <li class="subtitle"><strong>E-mail</strong></li>
+                <li>contato@evolutionblindagens.com.br</li>
+              </ul>
+              <ul class="col-md-2 col-sm-12">
+                <li class="title">Horários</li>
+                <li>De Segunda a sexta
+                  Das 08h às 18h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="text-footer">
+          Evolution 2019 - Todos direitos reservados - Desenvolvido por <a href="https://poussee.com.br">Agência
+            Poussée</a>
+        </p>
+      </div>
     </footer>
 
 
 </body>
 </html>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/Content/Plugins/Bootstrap/bootstrap.min.js"></script>
 <script src="/Scripts/main.js"></script>
