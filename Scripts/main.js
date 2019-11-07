@@ -66,3 +66,21 @@ $(document).ready(function () {
       nCount(".rect > h1");
     }
   });
+
+  /**
+ *
+ *  sticky navigation
+ *
+ */
+
+let navbar = $(".float-contact");
+
+$(window).scroll(function () {
+  // get the complete hight of window
+  let oTop = $(".quem-somos").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > oTop) {
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
+});

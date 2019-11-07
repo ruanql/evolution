@@ -155,10 +155,10 @@ body {
 }
 
 .main-header {
-    background-image: url("/assets/img/site_evolution-01.png");
+    background-image: url("/assets/img/car-banner1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: center center;
     padding-top: 10px;
     text-align: center;
     position: relative;
@@ -303,7 +303,6 @@ body {
   
   .brand img {
     height: 2em;
-    margin-top: 10px;
   }
   
   .brand a,
@@ -551,7 +550,6 @@ body {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 20px 0px;
   }
   
   @media only screen and (max-width: 600px) {
@@ -569,14 +567,12 @@ body {
   
   .header-contato>div .item-contato {
     width: 35%;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
     padding: 0px 40px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid gray;
   }
 
   .header-contato>div .item-contato h4 {
@@ -589,7 +585,7 @@ body {
   
   .header-contato>div .item-contato p {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 16px;
     color: #fff;
     font-weight: 300;
   }
@@ -618,6 +614,29 @@ body {
     .header-contato>div .hide {
       display: none;
     }
+  }
+
+  .float-contact {
+    transition: 0.7s;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    bottom: 0;
+  }
+  
+  @media (max-width: 780px) {
+    .float-contact {
+      position: fixed;
+    }
+  }
+
+  .sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 100;
+    transition: all 1.5s ease;
   }
 
   .home-container {
