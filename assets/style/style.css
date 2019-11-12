@@ -150,7 +150,7 @@ button {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--Ubuntu-font), sans-serif;
   font-size: 16px;
 }
 
@@ -581,6 +581,7 @@ body {
     color: #ed632f;
     font-weight: 300;
     text-transform: uppercase;
+    margin-top: .5rem;
   }
   
   .header-contato>div .item-contato p {
@@ -884,13 +885,46 @@ line-height: 1.5rem;
   position: relative;
   z-index: 1;
   width: 17rem;
-  height: 12rem;
+  height: 35rem;
   padding-top: 3.5vmin;
   margin: 1rem;
 }
 
 .features {
   margin-top: -20vmin;
+}
+
+
+.home-container .features .services .home-title{
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+  z-index: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home-container .features .services .home-subtitle{
+  margin: 0px;
+  padding: 0px;
+  color: gray;
+  font-size: 32px;
+  margin-bottom: 15px;
+  z-index: 1;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.home-container .features .services .home-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+  z-index: 1;
+  position: relative;
+  line-height: 1.5rem;
 }
 
 .aling-itens {
