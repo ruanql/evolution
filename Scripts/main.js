@@ -84,3 +84,33 @@ $(window).scroll(function () {
     navbar.removeClass("sticky");
   }
 });
+
+$(document).ready(function(){
+  $('.montadoras').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '<i class="left-arrow"></i>',
+  nextArrow: '<i class="right-arrow"></i>',
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: 
+  [
+  {
+     breakpoint: 600,
+     settings: {
+         infinite: true,
+         arrows: true,
+         slidesToShow: 2
+     }
+  },
+  {
+     breakpoint: 480,
+     settings: {
+         infinite: true,
+         arrows: true,
+         slidesToShow: 1
+     }
+  }
+  ]
+  });
+});

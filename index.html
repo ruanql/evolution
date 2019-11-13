@@ -258,13 +258,7 @@
                      <div class="logo"><img src="/assets/img/logo-volvo.png" alt="">
                      </div>
                 </div>
-                </div>
-                <div class="col-12 text-center">
-                    <ul>
-                        <li class="prev"><img src="/assets/img/arrow-prev.png" alt=""></li>
-                        <li class="next"><img src="/assets/img/arrow-next.png" alt=""></li>
-                    </ul>
-                </div>
+            </div>
         </section>
 
     </main>
@@ -352,37 +346,7 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/Content/Plugins/Bootstrap/bootstrap.min.js"></script>
+<script src="../Content/Plugins/scrollTo/jquery.scrollTo.js"></script>
+<script src="../Content/Plugins/scrollTo/jquery.localScroll.js"></script>
 <script src="/Content/Plugins/Slick/slick.min.js"></script>
 <script src="/Scripts/main.js"></script>
-
-<script>
-    $(document).ready(function(){
-       $('.montadoras').slick({
-       slidesToShow: 4,
-       slidesToScroll: 1,
-       prevArrow: $('.prev'),
-       nextArrow: $('.next'),
-       autoplay: true,
-       autoplaySpeed: 2000,
-       responsive: 
-       [
-       {
-          breakpoint: 600,
-          settings: {
-              infinite: true,
-              arrows: true,
-              slidesToShow: 2
-          }
-       },
-       {
-          breakpoint: 480,
-          settings: {
-              infinite: true,
-              arrows: true,
-              slidesToShow: 1
-          }
-       }
-       ]
-       });
-    });
-    </script>
