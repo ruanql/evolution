@@ -905,8 +905,6 @@ line-height: 1.5rem;
 }
 
 .services {  
-  width: 400px;
-  height: 400px;
   overflow: hidden; 
 }
 
@@ -964,6 +962,15 @@ line-height: 1.5rem;
   align-items: center;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.home-container .numeros {
+  text-align: center;
+  padding: 100px 0px;
+  background: url('/assets/img/evolution_faixa.png') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  background-color: #010810;
 }
 
 .numbers .rect {
