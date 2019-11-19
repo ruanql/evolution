@@ -154,15 +154,29 @@ body {
   font-size: 16px!important;
 }
 
-.main-header {
-    background-image: url("/assets/img/car-banner1.jpg");
+
+  .bg-one {
+    background-image: url('/assets/img/car-banner1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-top: 10px;
     text-align: center;
     position: relative;
     height: 100vh;
+  }
+
+  .bg-two {
+    background-image: url('/assets/img/banner_evolution_novo_corolla.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  .carousel-indicators {
+    bottom: 80px!important;
   }
 
   .carousel-indicators .active {
@@ -177,10 +191,22 @@ body {
   }
   
   @media only screen and (max-width: 768px) {
-    .main-header {
+    .bg-two{
       background-position: center center;
       height: 100vh;
     }
+
+    .main-header .header-text{
+      text-align: center;
+      margin-top: 100px!important;
+      padding: 0px 5%!important;
+    }
+
+    .header-contato>div .item-contato{
+      text-align: center;
+      padding: 0px 0!important;
+    }
+
   }
 
   .main-header .menu {
@@ -497,8 +523,8 @@ body {
   
   .main-header .header-text {
     text-align: center;
-    margin-top: 120px;
-    padding: 0px 5%;
+    margin-top: 140px;
+    padding: 0px 25%;
   }
   
   .main-header .header-text h3 {
@@ -514,7 +540,25 @@ body {
     color: white;
     font-weight: 300;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+  }
+
+  .saiba-mais-home__button {
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 15px 35px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .saiba-mais-home__button:hover {
+    transform: scale(1.1);
+    color: #ffffff !important;
+    background: var(--bggradient);
   }
   
   .main-header .header-text .color-white {
