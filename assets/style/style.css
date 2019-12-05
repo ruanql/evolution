@@ -166,17 +166,37 @@ body {
   }
 
   .bg-two {
-    background-image: url('/assets/img/banner_evolution_novo_corolla.png');
+    background-image: url('/assets/img/banner_evolution_novo_corolla.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: right;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  .bg-sobre {
+    background-image: url('/assets/img/bg-sobre-nos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     text-align: center;
     position: relative;
     height: 100vh;
   }
 
   .bg-blindagens {
-    background-image: url('/assets/img/bg-blindagens.png');
+    background-image: url('/assets/img/bg-blindagens.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  .bg-servicos {
+    background-image: url('/assets/img/bg-servicos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -186,13 +206,23 @@ body {
   }
 
   .bg-veiculos{
-    background-image: url('/assets/img/bg-veiculos.png');
+    background-image: url('/assets/img/bg-veiculos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: center;
     position: relative;
     height: 100vh;
+  }
+
+  .bg-contato {
+    background-image: url('/assets/img/bg-contato.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 70vh;
   }
 
   .carousel-indicators {
@@ -939,7 +969,7 @@ line-height: 1.5rem;
 .cover {
   width: 100%;
   height: 55vmin;
-  background: url('/assets/img/bg-servicos.jpg') no-repeat;
+  background: url('/assets/img/bg-services.jpg') no-repeat;
   background-position: center;
   position: relative;
 }
@@ -1125,6 +1155,72 @@ line-height: 1.5rem;
       left: 0;
     }
   }
+
+
+/* Sobre */
+
+@media only screen and (max-width: 768px) {
+  .tab-content {
+    padding: initial!important;
+  }
+}
+
+.nav-tabs {
+  border-bottom: none!important;
+}
+
+.tab-content {
+  padding: 0 7em;
+}
+
+.list-group-item {
+  border: none!important;
+}
+
+.list-group-item img {
+  padding-right: 1.6em;
+  padding-bottom: 1em;
+}
+
+.quem-somos .categorias {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 100;
+  margin-top: 80px;
+  margin-bottom: 55px;
+}
+
+.quem-somos .categorias a {
+  width: 33%;
+  background: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 22px 0px;
+  border: none;
+  margin: 0px;
+  border: none;
+  border-bottom: 4px solid #aaaaaa;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.quem-somos .categorias a.active {
+  background: transparent;
+  color: #000;
+  border: none;
+  border-bottom: 4px solid #ed632f;
+}
+
+.quem-somos .categorias a:hover {
+  background: var(--orange-evo);
+  color: #fff;
+}
 
 
 .newsletter {
