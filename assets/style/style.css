@@ -175,6 +175,26 @@ body {
     height: 100vh;
   }
 
+  .bg-blindagens {
+    background-image: url('/assets/img/bg-blindagens.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  .bg-veiculos{
+    background-image: url('/assets/img/bg-veiculos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
   .carousel-indicators {
     bottom: 80px!important;
   }
@@ -597,6 +617,7 @@ body {
   .header-contato {
     background: transparent;
     transition: 0.7s;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .header-contato>div {
@@ -628,7 +649,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding: 0px 40px;
-    border-right: 1px solid gray;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .header-contato>div .item-contato h4 {

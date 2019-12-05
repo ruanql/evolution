@@ -66,7 +66,7 @@
                                             <li><a href="blindagens.html">Blindagens</a></li>
                                             <li><a href="servicos.html">Serviços</a></li>
                                             <li><a href="veiculos.html">Veículos</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="https://blog.evolutionblindagens.com.br/">Blog</a></li>
                                             <li><a href="contato.html">Contato</a></li>
                                           </ul>
                                         </nav>
@@ -88,7 +88,7 @@
                                             <li><a href="blindagens.html">Blindagens</a></li>
                                             <li><a href="servicos.html">Serviços</a></li>
                                             <li><a href="veiculos.html">Veículos</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="https://blog.evolutionblindagens.com.br/">Blog</a></li>
                                             <li><a href="contato.html">Contato</a></li>
                                           </ul>
                                         </nav>
@@ -353,7 +353,21 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/Content/Plugins/Bootstrap/bootstrap.min.js"></script>
-<script src="../Content/Plugins/scrollTo/jquery.scrollTo.js"></script>
-<script src="../Content/Plugins/scrollTo/jquery.localScroll.js"></script>
+<script src="/Content/Plugins/scrollTo/jquery.scrollTo.js"></script>
+<script src="/Content/Plugins/scrollTo/jquery.localScroll.js"></script>
 <script src="/Content/Plugins/Slick/slick.min.js"></script>
 <script src="/Scripts/main.js"></script>
+
+<script>
+ // Contador
+  
+ let a = 0;
+  $(window).scroll(function () {
+    // The .offset() method allows us to retrieve the current position of an element  relative to the document
+    let oTop = $(".numbers").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() >= oTop) {
+      a++;
+      nCount(".rect > h1");
+    }
+  });
+  </script>

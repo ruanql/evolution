@@ -9,6 +9,28 @@ $(document).ready(function () {
       }
     });
   });
+
+    /**
+ 
+  sticky navigation
+
+ */
+
+ 
+
+let navbar = $(".float-contact");
+
+$(window).scroll(function () {
+  // get the complete hight of window
+  let oTop = $(".home-container").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > oTop) {
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
+});
+
+
   
   //Controll menu responsivc
   (function ($) { // Begin jQuery
@@ -56,34 +78,10 @@ $(document).ready(function () {
         });
     });
   };
-  
-  let a = 0;
-  $(window).scroll(function () {
-    // The .offset() method allows us to retrieve the current position of an element  relative to the document
-    let oTop = $(".numbers").offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() >= oTop) {
-      a++;
-      nCount(".rect > h1");
-    }
-  });
 
-  /**
- *
- *  sticky navigation
- *
- */
+ 
 
-let navbar = $(".float-contact");
-
-$(window).scroll(function () {
-  // get the complete hight of window
-  let oTop = $(".quem-somos").offset().top - window.innerHeight;
-  if ($(window).scrollTop() > oTop) {
-    navbar.addClass("sticky");
-  } else {
-    navbar.removeClass("sticky");
-  }
-});
+// Carousel montadoras
 
 $(document).ready(function(){
   $('.montadoras').slick({
