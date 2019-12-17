@@ -1245,6 +1245,10 @@ line-height: 1.5rem;
   padding-bottom: 1em;
 }
 
+.list-group-item:last-child{
+  display: flex!important;
+}
+
 .cards-evo {
   padding-top: 5em;
 }
