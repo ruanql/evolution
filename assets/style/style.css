@@ -1098,6 +1098,35 @@ line-height: 1.5rem;
   justify-content: flex-end;
 }
 
+.fotos-evo {
+  position: absolute;
+    right: 8vmin;
+}
+
+.fotos-evo :last-child {
+  position: absolute;
+    top: 8vmin;
+    left: 15vmin;
+}
+
+@media only screen and (max-width: 768px) {
+  .fotos-evo {
+    position: initial;
+      right: initial;
+      width: 20%;
+  }
+
+  .fotos-evo img {
+      width: 40%;
+  }
+  
+  .fotos-evo :last-child {
+    position: initial;
+      top: initial;
+      left: initial;
+  }
+}
+
 .home-container .numeros,
 .home-container .principles {
   text-align: center;
@@ -1475,6 +1504,7 @@ line-height: 1.5rem;
 .contact-box .container .form .contact-form select,
 .contact-box .container .form .contact-form textarea {
   background: none;
+  color: #fff;
   width: 100%;
   padding: 14px;
   border: 1px solid #fff;
