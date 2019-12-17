@@ -849,6 +849,14 @@ line-height: 1.5rem;
   .home-container .sistemas .sistemas-boxes .box:hover {
     width: 100% !important;
   }
+
+  .home-container .sistemas .sistemas-boxes .tipos {
+    width: 100%!important;
+  }
+
+  .home-container .sistemas .sistemas-boxes .tipos:hover {
+    width: 100% !important;
+  }
 }
 
 .home-container .sistemas .sistemas-boxes .box {
@@ -858,6 +866,28 @@ line-height: 1.5rem;
   background-clip: content-box;
   height: 375px;
   width: 420px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s all;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.home-container .sistemas .sistemas-boxes .tipos {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  height: 496px;
+  width: 300px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1338,7 +1368,9 @@ line-height: 1.5rem;
 .home-container .trabalhe-conosco {
   text-align: center;
   padding: 100px 0px;
-  background: url('/assets/img/bg-services.jpg');
+  background: url('/assets/img/trabalhe-conosco.jpg');
+  background-color: #414141;
+  background-blend-mode: overlay;
 }
 
 .home-container .trabalhe-conosco .home-title {
