@@ -753,14 +753,16 @@ body {
   
   .home-container .quem-somos,
   .home-container .certificada,
-  .home-container .marcas {
+  .home-container .marcas,
+  .home-container .diferenciais {
     text-align: center;
     padding: 100px 0px;
   }
 
   .home-container .quem-somos .home-title,
 .home-container .certificada .home-title,
-.home-container .marcas .home-title {
+.home-container .marcas .home-title,
+.home-container .diferenciais .home-title  {
   margin: 0px;
   padding: 0px;
   color: #000;
@@ -773,7 +775,8 @@ body {
 
 .home-container .quem-somos .home-text,
 .home-container .certificada .home-text,
-.home-container .marcas .home-text {
+.home-container .marcas .home-text,
+.home-container .diferenciais .home-text {
   color: #000;
   font-size: 20px;
   font-weight: 100;
@@ -790,7 +793,8 @@ body {
   background: var(--bggradient);
 }
 
-.home-container .servicos {
+.home-container .servicos,
+.home-container .principles {
   text-align: center;
   padding: 100px 0px;
 }
@@ -798,7 +802,8 @@ body {
 
 .home-container .sistemas .home-title,
 .home-container .numeros .home-title,
-.home-container .servicos .home-title {
+.home-container .servicos .home-title,
+.home-container .principles .home-title {
 margin: 0px;
 padding: 0px;
 color: #fff;
@@ -811,7 +816,8 @@ text-transform: uppercase;
 
 .home-container .sistemas .home-text,
 .home-container .numeros .home-text,
-.home-container .servicos .home-text {
+.home-container .servicos .home-text,
+.home-container .principles .home-text {
 color: #fff;
 font-size: 20px;
 font-weight: 100;
@@ -998,7 +1004,7 @@ line-height: 1.5rem;
   margin: 1rem;
 }
 
-.features {
+.servicos .features {
   margin-top: -20vmin;
 }
 
@@ -1062,7 +1068,8 @@ line-height: 1.5rem;
   justify-content: flex-end;
 }
 
-.home-container .numeros {
+.home-container .numeros,
+.home-container .principles {
   text-align: center;
   padding: 100px 0px;
   background: url('/assets/img/evolution_faixa.png') no-repeat;
@@ -1182,6 +1189,58 @@ line-height: 1.5rem;
   padding-bottom: 1em;
 }
 
+.cards-evo {
+  padding-top: 5em;
+}
+
+.cards-evo .comum {
+  padding: 0 1em;
+}
+
+.cards-evo .recomendada {
+  padding: 0 1em;
+}
+
+.cards-evo .card-header {
+  text-transform: uppercase;
+}
+
+.cards-evo .recomendada .card-header {
+  background-color: var(--orange-evo);
+  border: none;
+}
+
+.cards-evo .comum .saiba-mais__button{
+  font-weight: 700;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card__button {
+  font-weight: 700;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card__button:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+
 .quem-somos .categorias {
   width: 100%;
   display: -ms-flexbox;
@@ -1222,6 +1281,88 @@ line-height: 1.5rem;
   color: #fff;
 }
 
+.principles {
+  height: 565px;
+}
+
+.principles .categorias {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 100;
+  margin-bottom: 55px;
+}
+
+.principles .categorias a {
+  width: 33%;
+  background: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 22px 0px;
+  border: none;
+  margin: 0px;
+  border: none;
+  border-bottom: 4px solid #aaaaaa;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.principles .categorias a.active {
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid #ed632f;
+}
+
+.principles .categorias a:hover {
+  background: var(--orange-evo);
+  color: #fff;
+}
+
+.principles .tab-content {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+.home-container .trabalhe-conosco {
+  text-align: center;
+  padding: 100px 0px;
+  background: url('/assets/img/bg-services.jpg');
+}
+
+.home-container .trabalhe-conosco .home-title {
+margin: 0px;
+padding: 0px;
+color: #fff;
+font-size: 32px;
+margin-bottom: 35px;
+z-index: 1;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.home-container .trabalhe-conosco .home-text {
+color: #fff;
+font-size: 20px;
+font-weight: 100;
+z-index: 1;
+position: relative;
+line-height: 1.5rem;
+}
+
+
+/* Contato  */
 
 .contact-box {
   position: relative;
