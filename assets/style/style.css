@@ -175,10 +175,12 @@ body {
 }
 
 .bg-sobre {
-  background-image: url("/assets/img/bg-sobre-nos.jpg");
+  background-image: url("/assets/img/bg-sobre-nos-evolution.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-color: #383838;
+  background-blend-mode: overlay;
   text-align: center;
   position: relative;
   height: 100vh;
