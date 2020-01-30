@@ -1413,6 +1413,34 @@ article {
   line-height: 1.5rem;
 }
 
+.home-container .chroma {
+  text-align: center;
+  padding: 100px 0px;
+  background: #fff;
+  color: #000;
+  background-blend-mode: overlay;
+}
+
+.home-container .chroma .home-title {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 35px;
+  z-index: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home-container .chroma .home-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+  z-index: 1;
+  position: relative;
+  line-height: 1.5rem;
+}
+
 /* Contato  */
 
 .contact-box {
