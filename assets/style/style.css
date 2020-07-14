@@ -1129,6 +1129,16 @@ article {
   background-color: #010810;
 }
 
+.homologada  {
+  padding: 0 10em;
+}
+
+@media only screen and (max-width: 768px) {
+  .homologad .homo {
+    padding-top: 2vmin;
+  }
+}
+
 .numbers .rect {
   position: relative;
   z-index: 1;
