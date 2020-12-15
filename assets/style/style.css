@@ -154,6 +154,47 @@ body {
   font-size: 16px !important;
 }
 
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
 .bg-one {
   background-image: url("/assets/img/car-banner1.jpg");
   background-repeat: no-repeat;
@@ -573,7 +614,7 @@ article {
 
 .main-header .header-text {
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 15vh;
   padding: 0px 25%;
 }
 
@@ -899,6 +940,11 @@ article {
   position: relative;
   color: #fff;
   z-index: 1;
+}
+
+.home-container .sistemas .sistemas-boxes .box a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .home-container .sistemas .sistemas-boxes .box .title {
@@ -1248,6 +1294,10 @@ article {
 }
 
 .list-group-item:last-child {
+  display: flex !important;
+}
+
+.list-group-item:first-child {
   display: flex !important;
 }
 
