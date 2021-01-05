@@ -1032,6 +1032,7 @@ article {
 
 .home-container .certificada img {
   width: 80%;
+  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) {
