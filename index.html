@@ -89,7 +89,7 @@
 
   <header class="main-header">
     <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload>
     <source src="/assets/videos/video-porshe-corolla-min.mp4" type="video/mp4">
   </video>
   <div class="container h-100">
@@ -324,7 +324,7 @@
               <input class="block-inscrevase__input" name="email"
                 placeholder="Inscreva-se para receber nossa newsletter">
               <input name="_redirect" type="hidden" id="name" value="https://evolutionblindagens.com.br/contato-obrigado.html">
-              <input type='hidden' name='form-name' value='newsletter' />
+              <input type='hidden' name='form-name' value='newsletter' required="required" />
               <button class="btn-arrow" type="submit">Enviar</button>
             </form>
           </div>
