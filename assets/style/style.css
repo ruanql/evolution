@@ -618,7 +618,7 @@ article {
 }
 
 .main-header .header-text h3 {
-  color: #fff;
+  color: var(--orange-evo);
   font-size: 32px;
   font-weight: bold;
   line-height: 3rem;
@@ -627,7 +627,7 @@ article {
 
 .main-header .header-text p {
   font-size: 24px;
-  color: white;
+  color: var(--orange-evo);
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 25px;
@@ -636,6 +636,7 @@ article {
 .saiba-mais-home__button {
   font-weight: 700;
   color: #fff;
+  background: var(--orange-evo);
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
