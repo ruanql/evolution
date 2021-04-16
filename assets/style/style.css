@@ -1830,7 +1830,8 @@ article {
   -moz-box-shadow: -1px 13px 19px -13px rgba(0,0,0,0.75);
   box-shadow: -1px 13px 19px -13px rgba(0,0,0,0.75);
   z-index: 1000;
-  border: 4000px solid rgba(0, 0, 0, 0.5);;
+  border: 4000px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 #popup > img {
