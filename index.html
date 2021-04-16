@@ -53,6 +53,15 @@
 </head>
 
 <body>
+<!------------------------------------ POP-UP  ------------------------------------->
+  <div id="popup" class="popup">
+    <a href="veiculos.html">
+    <img src="/assets/img/evolution-popup-veiculos-.png" alt="popup">
+    </a>
+    <div>
+      <button id="close">X</button>
+    </div>
+  </div>
 
   <section class="navigation">
     <div class="nav-container">
@@ -87,12 +96,10 @@
     </div>
   </section>
 
-  <header class="main-header">
+  <header class="main-header bg-one">
     <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload>
-    <source src="/assets/videos/videos-porshe-corolla_gc.mp4" type="video/mp4">
-  </video>
-  <div class="container h-100">
+  
+  <div class="container h-100 ">
     <div class="d-flex text-center align-items-center">
       <div class="w-100 text-white">
         <nav class="container menu">
@@ -202,8 +209,9 @@
           </div>
           <div class="col-md-6 col-12">
             <h2 class="home-title pt-5">Certificados pela Toyota</h2>
-            <p class="home-text">Com extenso know-how no ramo de blindagem automotiva, a Evolution Blindagens
-              é certificada pela Toyota do Brasil e possui também a certificação ISO 9001:2015.
+            <p class="home-text">Desde 2017, a Poussée auxilia no crescimento de marcas dos
+              mais diversos segmentos. Com estratégias de marketing de alta
+              performance, elevamos empresas a um novo patamar de sucesso.
             </p>
             <p class="home-text pt-5">
               <a href="https://newcorolla.evolutionblindagens.com.br/" class="saiba-mais__button">Saiba mais</a>
@@ -427,6 +435,13 @@ $(document).ready(function() {
       footer.fadeIn(100);
     }
   });
+});
+
+var close = document.getElementById('close');
+    var popup = document.getElementById('popup');
+
+    close.addEventListener("click", function() {
+    popup.style.display = 'none';
 });
 
 </script>
