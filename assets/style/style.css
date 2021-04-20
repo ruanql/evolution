@@ -249,9 +249,9 @@ header .overlay {
 }
 
 .bg-veiculos {
-  background-image: url("/assets/img/bg-veiculos.jpg");
+  background-image: url("/assets/img/evolution-banner-carrosVenda.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center center;
   text-align: center;
   position: relative;
@@ -294,9 +294,19 @@ header .overlay {
     height: 100vh;
   }
 
+  .bg-veiculos {
+    background-image: url("/assets/img/evolution-banner-carrosVenda.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 70%;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  }
+
   .main-header .header-text {
     text-align: center;
-    margin-top: 25vh !important;
+    margin-top: 65vh !important;
     padding: 0px 5% !important;
   }
 
@@ -624,6 +634,10 @@ article {
   padding: 0px 25%;
 }
 
+.main-header .header-text a {
+  margin-top: 50px;
+}
+
 .main-header .header-text h3 {
   color: var(--orange-evo);
   font-size: 32px;
@@ -636,7 +650,7 @@ article {
   font-size: 24px;
   color: var(--orange-evo);
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 55%;
   margin-bottom: 25px;
 }
 
@@ -657,6 +671,27 @@ article {
   transform: scale(1.1);
   color: #ffffff !important;
   background: var(--bggradient);
+  text-decoration: none;
+}
+
+.saiba-mais-outline {
+  font-weight: 700;
+  color: #fff;
+  background: var(--orange-evo);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 15px 35px;
+  border: 1px solid var(--orange-evo);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.saiba-mais-outline:hover {
+  transform: scale(1.1);
+  color: #ffffff !important;
+  background: var(--bggradient);
+  border: 1px solid var(--bggradient);
   text-decoration: none;
 }
 
