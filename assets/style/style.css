@@ -303,13 +303,13 @@ header .overlay {
   }
 
   .bg-veiculos {
-    background-image: url("/assets/img/evolution-banner-carrosVenda.jpg");
+    background-image: url("/assets/img/evolution-banner-carrosVenda-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: 70%;
+    background-size: contain;
+    background-position-x: center;
     text-align: center;
     position: relative;
-    height: 100vh;
+    height: 70vh;
   }
 
   .main-header .header-text {
