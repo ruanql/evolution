@@ -164,7 +164,8 @@ header {
 }
 
 .header-veiculos {
-  height: auto;
+  max-height: 380px;
+  min-height: initial;
 }
 
 header video {
@@ -257,13 +258,13 @@ header .overlay {
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y: top;
   text-align: center;
   position: relative;
-  height: 50vh;
+  height: 70vh;
   -webkit-box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 76px 48px -30px rgba(0,0,0,0.75);
 }
 
 .bg-contato {
