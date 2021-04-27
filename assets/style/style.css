@@ -156,11 +156,15 @@ body {
 
 header {
   position: relative;
-  background-color: black;
+  background-color: transparent;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+}
+
+.header-veiculos {
+  height: auto;
 }
 
 header video {
@@ -252,10 +256,14 @@ header .overlay {
   background-image: url("/assets/img/evolution-banner-carrosVenda.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center center;
+  background-position-x: center;
+  background-position-y: center;
   text-align: center;
   position: relative;
-  height: 100vh;
+  height: 50vh;
+  -webkit-box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 76px 48px 0px rgba(0,0,0,0.75);
 }
 
 .bg-contato {
@@ -265,7 +273,7 @@ header .overlay {
   background-position: center center;
   text-align: center;
   position: relative;
-  height: 70vh;
+  height: 100vh;
 }
 
 .carousel-indicators {
@@ -650,7 +658,7 @@ article {
   font-size: 24px;
   color: var(--orange-evo);
   font-weight: 300;
-  margin-top: 55%;
+  margin-top: 15%;
   margin-bottom: 25px;
 }
 
